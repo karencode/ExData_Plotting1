@@ -22,7 +22,7 @@ with(data,plot(DateTime,Voltage,type="l",xlab="datetime",ylab="Voltage"))
 with(data,plot(DateTime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(data,lines(DateTime,Sub_metering_2,type="l",col="red"))
 with(data,lines(DateTime,Sub_metering_3,type="l",col="blue"))
-legend("topright",lty=1,col=c("black","red","blue"),names(data)[7:9], bty="n")
+legend("topright",lty=1,col=c("black","red","blue"),names(data)[7:9], bty="n",pt.cex=1, cex=0.85)
 
 #Fourth Plot
 #Note: I would not have chosen to write the y label out nicely, but have done it as the samples show.

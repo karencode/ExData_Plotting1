@@ -11,7 +11,7 @@ par(ps=13)
 with(data,plot(DateTime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(data,lines(DateTime,Sub_metering_2,type="l",col="red"))
 with(data,lines(DateTime,Sub_metering_3,type="l",col="blue"))
-legend("topright",lty=1,col=c("black","red","blue"),names(data)[7:9])
+legend("topright",lty=1,col=c("black","red","blue"),names(data)[7:9], pt.cex=1, cex=0.85)
 
 
 dev.off()
